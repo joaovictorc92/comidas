@@ -6,8 +6,9 @@ public class Dialog {
     }
 
     public static int getConfirmOption(Comida c, Object[] options) {
+
         return JOptionPane.showOptionDialog(null,
-                "O prato que você pensou é " + c.getNome(),
+                String.format("O prato que você pensou é %s?", c.getNome()),
                 "confirm",
                 JOptionPane.YES_NO_OPTION,
                 JOptionPane.QUESTION_MESSAGE,
